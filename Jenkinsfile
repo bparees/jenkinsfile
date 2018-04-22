@@ -2,7 +2,7 @@ pipeline {
   agent none 
   stages {
     stage('test maven-nodejs') {
-      agent { label 'maven-nodejs' }
+      agent { label 'maven' }
       steps {
         echo 'Hello from maven-nodejs slave'
         sh 'mvn -version'
